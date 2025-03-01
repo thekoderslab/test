@@ -1,0 +1,142 @@
+body{
+    font-family: poppins;
+    margin: 0px 70px;
+}
+
+:root{
+    --main-color: #1e1e1e
+}
+
+#header{
+    margin-top: 40px;
+}
+
+#menu{
+    float: left;
+}
+
+#menu li{
+    display: inline-block;
+    padding: 0px 13px;
+}
+
+#menu li a{
+    display: block;
+}
+
+#menu li a:hover{
+    color: aqua;
+    background-color: blue;
+}
+
+#button{
+    width: 146px;
+    height: 45px;
+    border-radius: 8px;
+    background: #5CC2AA;
+    font-size: 15px;
+    float: right;
+}
+
+#banner h1{
+    color: #2C2D2C;
+    font-family: Poppins;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    clear: both;
+    width: 611px;
+    flex-shrink: 0;
+}
+
+#banner span{
+    color: #5CC2AA;
+    font-family: Poppins;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    padding-top: 20px;
+    width: 611px;
+    flex-shrink: 0;
+}
+
+#banner p{
+    width: 547px;
+    color: #2C2D2C;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    flex-shrink: 0;
+}
+
+#banner img{
+    float: right;
+}
+
+#footer{
+    clear: both;
+}
+
+#clippath img{
+    width: 900px;
+    height: auto;
+    float: left;
+    clip-path: polygon(100% 0, 51% 71%, 88% 71%, 89% 100%, 0 100%, 0 31%);
+    shape-outside: polygon(100% 0, 51% 71%, 88% 71%, 89% 100%, 0 100%, 0 31%);
+    shape-margin: 20px;
+}
+
+#tablespacing table, th, tr, td{
+    border: 2px solid black;
+    border-spacing: 10px 20px;
+    border-collapse: collapse;
+    caption-side: bottom;
+    table-layout: auto;
+    width: 500px;
+}
+
+#tablespacing tr:nth-child(even){
+    background-color: darkgray;
+}
+
+#resize p{
+    overflow: auto;
+    width: 100px;
+    height: 150px;
+    resize: both;
+    border: 1px solid black;
+}
+
+#transition{
+    width: 150px;
+    height: 300px;
+    background-color: bisque;
+    transition: width,height,background-color 1s,1s,1s;
+    transition-timing-function: ease-in-out;
+}
+
+#transition:hover{
+    width: 350px;
+    height: 500px;
+    background-color: rgb(255, 140, 0);
+}
+
+@media screen and (max-width: 1000px) {
+    body{
+        background-color: aqua;
+    }
+    #banner p{
+        width: 547px;
+        color: #2C2D2C;
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        flex-shrink: 0;
+    }
+}
